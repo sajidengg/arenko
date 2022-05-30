@@ -1,0 +1,517 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 16,
+    "passes": 4,
+    "pending": 0,
+    "failures": 12,
+    "start": "2022-05-28T13:29:35.315Z",
+    "end": "2022-05-28T13:29:45.832Z",
+    "duration": 10517,
+    "testsRegistered": 16,
+    "passPercent": 25,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "83ef2613-4642-4f59-b48b-91624d0668f5",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8fef22f7-c1a8-4117-b8d6-b5c617eb9db1",
+          "title": "Write a suite of HTTP API tests in which each case sends a specific request and expects specific responses, status codes etc",
+          "fullFile": "/Users/sajidalisaiyed/Documents/arenko/sdet_test/Test/SPEC/Task1_AutomatedAPI.js",
+          "file": "/Test/SPEC/Task1_AutomatedAPI.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "GET /intensity",
+              "fullTitle": "Write a suite of HTTP API tests in which each case sends a specific request and expects specific responses, status codes etc GET /intensity",
+              "timedOut": null,
+              "duration": 24,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await Pages.getIntenSity();",
+              "err": {
+                "message": "FetchError: request to https://api.carbonintensity.org.uk/intensity failed, reason: getaddrinfo ENOTFOUND api.carbonintensity.org.uk",
+                "estack": "FetchError: request to https://api.carbonintensity.org.uk/intensity failed, reason: getaddrinfo ENOTFOUND api.carbonintensity.org.uk\n    at ClientRequest.<anonymous> (/Users/sajidalisaiyed/node_modules/node-fetch/lib/index.js:1491:11)\n    at TLSSocket.socketErrorListener (_http_client.js:469:9)\n    at emitErrorNT (internal/streams/destroy.js:106:8)\n    at emitErrorCloseNT (internal/streams/destroy.js:74:3)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)",
+                "diff": null
+              },
+              "uuid": "9b705f3c-b40f-492e-9eaf-92ddfbaaf1f8",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GET /intensity/date",
+              "fullTitle": "Write a suite of HTTP API tests in which each case sends a specific request and expects specific responses, status codes etc GET /intensity/date",
+              "timedOut": null,
+              "duration": 3,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await Pages.getIntenSityDate();",
+              "err": {
+                "message": "FetchError: request to https://api.carbonintensity.org.uk/intensity/date failed, reason: getaddrinfo ENOTFOUND api.carbonintensity.org.uk",
+                "estack": "FetchError: request to https://api.carbonintensity.org.uk/intensity/date failed, reason: getaddrinfo ENOTFOUND api.carbonintensity.org.uk\n    at ClientRequest.<anonymous> (/Users/sajidalisaiyed/node_modules/node-fetch/lib/index.js:1491:11)\n    at TLSSocket.socketErrorListener (_http_client.js:469:9)\n    at emitErrorNT (internal/streams/destroy.js:106:8)\n    at emitErrorCloseNT (internal/streams/destroy.js:74:3)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)",
+                "diff": null
+              },
+              "uuid": "dd2438df-70ad-4684-bbd7-d91bcf66844a",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GET /intensity/date/{date}",
+              "fullTitle": "Write a suite of HTTP API tests in which each case sends a specific request and expects specific responses, status codes etc GET /intensity/date/{date}",
+              "timedOut": null,
+              "duration": 2,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await Pages.getIntenSityDateWithParameters();",
+              "err": {
+                "message": "FetchError: request to https://api.carbonintensity.org.uk/intensity/date/2022-05-25 failed, reason: getaddrinfo ENOTFOUND api.carbonintensity.org.uk",
+                "estack": "FetchError: request to https://api.carbonintensity.org.uk/intensity/date/2022-05-25 failed, reason: getaddrinfo ENOTFOUND api.carbonintensity.org.uk\n    at ClientRequest.<anonymous> (/Users/sajidalisaiyed/node_modules/node-fetch/lib/index.js:1491:11)\n    at TLSSocket.socketErrorListener (_http_client.js:469:9)\n    at emitErrorNT (internal/streams/destroy.js:106:8)\n    at emitErrorCloseNT (internal/streams/destroy.js:74:3)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)",
+                "diff": null
+              },
+              "uuid": "03f3b7fa-74c4-4172-b1dc-25a500bb476b",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "9b705f3c-b40f-492e-9eaf-92ddfbaaf1f8",
+            "dd2438df-70ad-4684-bbd7-d91bcf66844a",
+            "03f3b7fa-74c4-4172-b1dc-25a500bb476b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 29,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": null
+        },
+        {
+          "uuid": "328e1c37-7b27-48f2-9223-c14da57b425f",
+          "title": "Tomorrow Tab",
+          "fullFile": "/Users/sajidalisaiyed/Documents/arenko/sdet_test/Test/SPEC/Task2_1_ActiveTab_GUI.js",
+          "file": "/Test/SPEC/Task2_1_ActiveTab_GUI.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: Open Browser in \"Tomorrow Tab\"",
+              "fullTitle": "Tomorrow Tab \"before all\" hook: Open Browser in \"Tomorrow Tab\"",
+              "timedOut": null,
+              "duration": 4640,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": null,
+              "context": null,
+              "code": "await Pages.launchBrowser(\"http://localhost:3000/\");",
+              "err": {},
+              "uuid": "b0341380-47ba-48a6-83e9-0dce22661928",
+              "parentUUID": null,
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "From and To fields can't be empty",
+              "fullTitle": "Tomorrow Tab From and To fields can't be empty",
+              "timedOut": null,
+              "duration": 5001,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await Pages.checkFromAndToCantEmpty();",
+              "err": {
+                "message": "AssertionError: expected undefined to equal 'Empty values are not allowed'",
+                "estack": "AssertionError: expected undefined to equal 'Empty values are not allowed'\n    at ValidateActiveTab.checkFromAndToCantEmpty (Test/Pages/ValidateGUI_ActiveTab.js:60:35)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async Context.<anonymous> (Test/SPEC/Task2_1_ActiveTab_GUI.js:20:16)",
+                "diff": null
+              },
+              "uuid": "8360a4f0-73c7-4e56-8338-6dbe89be4282",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "From and To fields  should be +ve numeric values.",
+              "fullTitle": "Tomorrow Tab From and To fields  should be +ve numeric values.",
+              "timedOut": null,
+              "duration": 9,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await  Pages.checkFromAndToPostiveValue();",
+              "err": {
+                "message": "AssertionError: expected undefined to equal 'FROM level outside valid range'",
+                "estack": "AssertionError: expected undefined to equal 'FROM level outside valid range'\n    at ValidateActiveTab.checkFromAndToPostiveValue (Test/Pages/ValidateGUI_ActiveTab.js:81:47)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async Context.<anonymous> (Test/SPEC/Task2_1_ActiveTab_GUI.js:25:16)",
+                "diff": null
+              },
+              "uuid": "53999e12-292d-4b23-98bf-5bcbea651952",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Asset drop-down can't be empty.",
+              "fullTitle": "Tomorrow Tab Asset drop-down can't be empty.",
+              "timedOut": null,
+              "duration": 4,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await Pages.checkAssetDropDownCantEmpty();",
+              "err": {
+                "message": "AssertionError: Unspecified AssertionError",
+                "estack": "AssertionError: Unspecified AssertionError\n    at ValidateActiveTab.checkAssetDropDownCantEmpty (Test/Pages/ValidateGUI_ActiveTab.js:106:12)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async Context.<anonymous> (Test/SPEC/Task2_1_ActiveTab_GUI.js:30:17)",
+                "diff": null
+              },
+              "uuid": "fb1f7e08-64f1-498a-8ea2-869ae0eac57b",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Start time should be after the current time.",
+              "fullTitle": "Tomorrow Tab Start time should be after the current time.",
+              "timedOut": null,
+              "duration": 2,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await  Pages.checkStartTime();",
+              "err": {
+                "message": "TypeError: Cannot read property 'includes' of undefined",
+                "estack": "TypeError: Cannot read property 'includes' of undefined\n    at ValidateActiveTab.checkStartTime (Test/Pages/ValidateGUI_ActiveTab.js:122:36)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async Context.<anonymous> (Test/SPEC/Task2_1_ActiveTab_GUI.js:34:16)",
+                "diff": null
+              },
+              "uuid": "8192c489-8a5e-41ae-9cca-89f91833e4ba",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "To Time should be after the start time.",
+              "fullTitle": "Tomorrow Tab To Time should be after the start time.",
+              "timedOut": null,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await   Pages.checkEndTime();",
+              "err": {
+                "message": "TypeError: Cannot read property 'includes' of undefined",
+                "estack": "TypeError: Cannot read property 'includes' of undefined\n    at ValidateActiveTab.checkEndTime (Test/Pages/ValidateGUI_ActiveTab.js:154:30)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async Context.<anonymous> (Test/SPEC/Task2_1_ActiveTab_GUI.js:38:15)",
+                "diff": null
+              },
+              "uuid": "be784e82-d24e-4475-9a80-980183b1b8e3",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Submit Asset",
+              "fullTitle": "Tomorrow Tab Submit Asset",
+              "timedOut": null,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await  Pages.clickTOOverRide();",
+              "err": {},
+              "uuid": "acf4e692-7215-4a4c-9d16-1eeab68fb3d0",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "acf4e692-7215-4a4c-9d16-1eeab68fb3d0"
+          ],
+          "failures": [
+            "8360a4f0-73c7-4e56-8338-6dbe89be4282",
+            "53999e12-292d-4b23-98bf-5bcbea651952",
+            "fb1f7e08-64f1-498a-8ea2-869ae0eac57b",
+            "8192c489-8a5e-41ae-9cca-89f91833e4ba",
+            "be784e82-d24e-4475-9a80-980183b1b8e3"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5018,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": null
+        },
+        {
+          "uuid": "ca2efb43-0811-49b1-8e91-6528d176bd91",
+          "title": "Tomorrow Tab",
+          "fullFile": "/Users/sajidalisaiyed/Documents/arenko/sdet_test/Test/SPEC/Task2_2_TomorrowTab_GUI.js",
+          "file": "/Test/SPEC/Task2_2_TomorrowTab_GUI.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: Open Browser in \"Tomorrow Tab\"",
+              "fullTitle": "Tomorrow Tab \"before all\" hook: Open Browser in \"Tomorrow Tab\"",
+              "timedOut": null,
+              "duration": 3762,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": null,
+              "context": null,
+              "code": "await Pages.launchBrowser(\"http://localhost:3000/\");",
+              "err": {},
+              "uuid": "ecd9c1d4-7fa5-4e92-b578-b366ab849860",
+              "parentUUID": null,
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "click on Tomorrow Tab",
+              "fullTitle": "Tomorrow Tab click on Tomorrow Tab",
+              "timedOut": null,
+              "duration": 5067,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await Pages.clickOnTomorrowTab();",
+              "err": {},
+              "uuid": "20d8f831-03bd-448a-94d1-9cb91199fd83",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Asset drop down can't be empty",
+              "fullTitle": "Tomorrow Tab Asset drop down can't be empty",
+              "timedOut": null,
+              "duration": 1370,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await Pages.assetDropDownValidation();",
+              "err": {},
+              "uuid": "53560fcf-f230-48ff-9151-27c9537371e3",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check that no null values are allowed for the Offer and Bid value.",
+              "fullTitle": "Tomorrow Tab Check that no null values are allowed for the Offer and Bid value.",
+              "timedOut": null,
+              "duration": 7,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await Pages.clickOnAddOverRide();\nawait Pages.checkNullValueOfOfferAndBid();",
+              "err": {
+                "message": "AssertionError: expected undefined to equal 'OFFER and BID empty'",
+                "estack": "AssertionError: expected undefined to equal 'OFFER and BID empty'\n    at ValidateGUI.checkNullValueOfOfferAndBid (Test/Pages/ValidateGUI.js:84:51)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async Context.<anonymous> (Test/SPEC/Task2_2_TomorrowTab_GUI.js:30:17)",
+                "diff": null
+              },
+              "uuid": "feb93d6c-8784-4802-a9a3-5aaa50e2e82a",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Offer Price must be greater than Offer Undo.",
+              "fullTitle": "Tomorrow Tab Offer Price must be greater than Offer Undo.",
+              "timedOut": null,
+              "duration": 10,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await Pages.checkPriceGreaterThenUndo();",
+              "err": {
+                "message": "AssertionError: Unspecified AssertionError",
+                "estack": "AssertionError: Unspecified AssertionError\n    at ValidateGUI.checkPriceGreaterThenUndo (Test/Pages/ValidateGUI.js:102:13)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async Context.<anonymous> (Test/SPEC/Task2_2_TomorrowTab_GUI.js:34:17)",
+                "diff": null
+              },
+              "uuid": "fd6e2628-4356-42af-b1b9-b8b3dac5ca1e",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Offer Price must be greater than Bid Undo..",
+              "fullTitle": "Tomorrow Tab Offer Price must be greater than Bid Undo..",
+              "timedOut": null,
+              "duration": 4,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await Pages.checkOfferUndoGreaterThanBidPrice();",
+              "err": {
+                "message": "AssertionError: Unspecified AssertionError",
+                "estack": "AssertionError: Unspecified AssertionError\n    at ValidateGUI.checkOfferUndoGreaterThanBidPrice (Test/Pages/ValidateGUI.js:118:13)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async Context.<anonymous> (Test/SPEC/Task2_2_TomorrowTab_GUI.js:39:17)",
+                "diff": null
+              },
+              "uuid": "4a79e298-0407-43bf-8421-b89f9859bbc3",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Offer Undo must be greater than Bid Price.",
+              "fullTitle": "Tomorrow Tab Offer Undo must be greater than Bid Price.",
+              "timedOut": null,
+              "duration": 4,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await Pages.checkOfferPriceGreaterThanBidUndo();",
+              "err": {
+                "message": "AssertionError: Unspecified AssertionError",
+                "estack": "AssertionError: Unspecified AssertionError\n    at ValidateGUI.checkOfferPriceGreaterThanBidUndo (Test/Pages/ValidateGUI.js:133:13)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async Context.<anonymous> (Test/SPEC/Task2_2_TomorrowTab_GUI.js:44:17)",
+                "diff": null
+              },
+              "uuid": "9fd67276-1574-43ae-b219-e7a0d00e82f1",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that the single-sided submission is allowed",
+              "fullTitle": "Tomorrow Tab Verify that the single-sided submission is allowed",
+              "timedOut": null,
+              "duration": 17,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await Pages.checkSingleSideJourney();",
+              "err": {},
+              "uuid": "d0f4e462-d83f-46a9-839b-1698bae89e1e",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "20d8f831-03bd-448a-94d1-9cb91199fd83",
+            "53560fcf-f230-48ff-9151-27c9537371e3",
+            "d0f4e462-d83f-46a9-839b-1698bae89e1e"
+          ],
+          "failures": [
+            "feb93d6c-8784-4802-a9a3-5aaa50e2e82a",
+            "fd6e2628-4356-42af-b1b9-b8b3dac5ca1e",
+            "4a79e298-0407-43bf-8421-b89f9859bbc3",
+            "9fd67276-1574-43ae-b219-e7a0d00e82f1"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6479,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": null
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.0.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "test-05-28-2022-18:59:35",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "Test/Test_Report",
+        "": true,
+        "reportFilename": "test-05-28-2022-18:59:35"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
